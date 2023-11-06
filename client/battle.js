@@ -39,8 +39,8 @@ async function randomQuestion(){ // calls for a random question
 
         answer1.textContent = randomisedAnswerArray[0];
         answer2.textContent = randomisedAnswerArray[1];
-        answer3.textContent = randomisedAnswerArray[3];
-        answer4.textContent = randomisedAnswerArray[4];
+        answer3.textContent = randomisedAnswerArray[2];
+        answer4.textContent = randomisedAnswerArray[3];
         //return answerArray["correct"];
         }
 }
