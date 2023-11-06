@@ -5,7 +5,7 @@ const questions = [
         "incorrect1": "incorrect answer",
         "incorrect2": "incorrect answer",
         "incorrect3": "incorrect answer",
-        id : 1
+        id : 0
     },
     {
         "Question": "This is the second question",
@@ -13,7 +13,7 @@ const questions = [
         "incorrect1": "incorrect answer",
         "incorrect2": "incorrect answer",
         "incorrect3": "incorrect answer",
-        id : 2,
+        id : 1,
     },
     {
         "Question": "This is the third question",
@@ -21,7 +21,7 @@ const questions = [
         "incorrect1": "incorrect answer",
         "incorrect2": "incorrect answer",
         "incorrect3": "incorrect answer",
-        id : 3,
+        id : 2,
     },
     {
         "Question": "This is the fourth question",
@@ -29,7 +29,7 @@ const questions = [
         "incorrect1": "incorrect answer",
         "incorrect2": "incorrect answer",
         "incorrect3": "incorrect answer",
-        id : 4,
+        id : 3,
     },
     {
         "Question": "This is the fifth question",
@@ -37,7 +37,7 @@ const questions = [
         "incorrect1": "incorrect answer",
         "incorrect2": "incorrect answer",
         "incorrect3": "incorrect answer",
-        id : 5,
+        id : 4,
     },
     {
         "Question": "This is the sixth question",
@@ -45,7 +45,7 @@ const questions = [
         "incorrect1": "incorrect answer",
         "incorrect2": "incorrect answer",
         "incorrect3": "incorrect answer",
-        id : 6,
+        id : 5,
     },
     {
         "Question": "This is the seventh question",
@@ -53,7 +53,7 @@ const questions = [
         "incorrect1": "incorrect answer",
         "incorrect2": "incorrect answer",
         "incorrect3": "incorrect answer",
-        id : 7,
+        id : 6,
     },
     {
         "Question": "This is the eigth question",
@@ -61,7 +61,7 @@ const questions = [
         "incorrect1": "incorrect answer",
         "incorrect2": "incorrect answer",
         "incorrect3": "incorrect answer",
-        id : 8,
+        id : 7,
     },
     {
         "Question": "This is the ninth question",
@@ -69,7 +69,7 @@ const questions = [
         "incorrect1": "incorrect answer",
         "incorrect2": "incorrect answer",
         "incorrect3": "incorrect answer",
-        id : 9,
+        id : 8,
     },
     {
         "Question": "This is the tenth question",
@@ -77,7 +77,7 @@ const questions = [
         "incorrect1": "incorrect answer",
         "incorrect2": "incorrect answer",
         "incorrect3": "incorrect answer",
-        id : 10,
+        id : 9,
     }
 
 ]

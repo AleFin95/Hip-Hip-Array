@@ -23,6 +23,17 @@ app.get('/questions/random', (req, res) => {
   res.send(questions[randIdx]);
 })
 
+app.get('/questions/:id', (req, res) => {
+  const idx = req.params.id;
+  if(isNaN(idx)){
+      res.status(404).send("Error - Not a number!")
+  }else if(idx >= 0 && idx <= questions.length-1){
+      res.send(questions[idx]);
+  }else{
+      res.status(404).send("Error - ID out of range")
+  }
+})
+
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
