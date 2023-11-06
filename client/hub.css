@@ -1,0 +1,51 @@
+#backgroundBox{
+    background-color: purple;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+#pannelBox{
+    background-color: red;
+    margin-top: 3%;
+    border: 2px solid black;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 400px;
+  padding-bottom: 40%;
+}
+
+#titleBox{
+    background-color: limegreen;
+    border: 2px solid black;
+    text-align: center;
+}
+
+h1{
+    font-size: 100px ;
+}
+
+h2{
+    text-align: center;
+    font-size: 60px;
+}
+
+#henry{
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 80%;
+    border: 1px solid;
+    margin-top: 10%;
+    margin-bottom: 2px;
+}
+
+#symbol{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%
+}
