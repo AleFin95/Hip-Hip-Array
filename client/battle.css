@@ -1,9 +1,63 @@
+body {
+    margin : 0;
+    border: 0;
+    background-size: cover;
+    background-color: brown;
+    font-family: monospace;  
+}
+
+section {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    min-height: 20%;
+    transform: translate(-50%, 100%);
+  
+    padding: 1rem;
+  
+    background-color: rgba(179, 88, 88, 0.198);
+    border-radius: 100rem;
+  
+    
+  }
+
+
+#questionBox{
+ display: flex;
+    flex-direction: column ;
+    align-items: normal;
+    justify-content: space-evenly;
+    width: 50%;
+    box-sizing: border-box;
+    transform: translate(20%, 100%);
+}
+#answers{
+    display: flex;
+       flex-direction: row ;
+       align-items: normal;
+       justify-content: space-evenly;
+       left: 70%;
+       top: 50%;
+       transform: translate(20%, 100%);
+       box-sizing: border-box;
+       padding: 1rem;
+       position: fixed;
+       
+
+   }
+
 p {
-    border: 1px solid black ;
+    border: 2px solid black ;
+    border-radius: 10%;
+    height: 20px;
     padding: 20px 0px;
-    width: 10%;
+    width: 50%;
+    text-align: center;
 }
 
 p:hover {
 background-color: darkmagenta;
 }
+
