@@ -1,3 +1,8 @@
+const answers = document.querySelectorAll(".choice")
+answers.addEventListener("click", CheckAnswers)
+
+
+
 const arr = []
 
 const whatever = randomQuestion(arr)
@@ -11,4 +16,8 @@ async function randomQuestion(arr){
         }
     }
     return arr
+}
+
+function CheckAnswers(e) {
+
 }
