@@ -5,6 +5,8 @@ const express = require('express');
 
 const app = express();
 const port = 3000;
+app.use(express.json())
+app.use(cors());
 
 app.use(logger);
 const questions = require("./API")
@@ -12,6 +14,10 @@ const questions = require("./API")
 app.get('/', (req, res) => {
   res.send('Welcome to the history game!');
 });
+
+app.get('/questions', (req, res) => {
+  res.send(questions);
+})
 
 app.get('/questions', (req, res) => {
   res.send(questions);
