@@ -1,5 +1,7 @@
 #backgroundBox{
     background-color: purple;
+    background: url(assets/tudor_houses.jpg);
+    background-size: cover;
     justify-content: center;
     border: 2px solid black;
 }
@@ -14,9 +16,14 @@
   width: 50%;
   height: 400px;
   padding-bottom: 40%;
+  border-radius: 40px;
 }
 
 #titleBox{
+    border: 2px solid black
+}
+
+#titleBoxBackground{
     background-color: limegreen;
     border: 2px solid black;
     text-align: center;
@@ -24,28 +31,37 @@
 
 h1{
     font-size: 100px ;
+    border: 2px solid black;
+    width: 50%;
+    text-align: center;
+    margin: auto;
 }
 
 h2{
     text-align: center;
     font-size: 60px;
+    font-family: "Bebas Neue";
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 #henry{
-    height: 400px;
+    height: 550px; 
     display: block;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    width: 80%;
+    position: relative; 
     border: 1px solid;
-    margin-top: 10%;
+    margin-top: 2%;
     margin-bottom: 2px;
+    max-width: 900px; 
+    border-radius: 20px;
 }
 
 #symbol{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%
+    width: 30%;
+    border-radius: 40px;
 }
