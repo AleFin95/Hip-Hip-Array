@@ -36,9 +36,9 @@ function reduceHealth(){ //temporary button for reducting health
 }
 
 function shuffleArray(array) { //randomises the answer array
-    for (var i = array.length - 1; i > 0; i--) {
-        var j = Math.floor(Math.random() * (i + 1));
-        var temp = array[i];
+    for (let i = array.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        let temp = array[i];
         array[i] = array[j];
         array[j] = temp;
     }
@@ -118,3 +118,4 @@ answer3.addEventListener("click", CheckAnswers)
 const answer4 = document.querySelector("#answer4")
 answer4.addEventListener("click", CheckAnswers)
 
+module.exports = {shuffleArray, CheckAnswers}
