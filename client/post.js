@@ -5,7 +5,7 @@ async function createQuestion(e){
   e.preventDefault()  
   
   const data = {
-    question: e.target.question.value,
+    Question: e.target.question.value,
     correct: e.target.correct.value,
     incorrect1: e.target.incorrect1.value,
     incorrect2: e.target.incorrect2.value,
