@@ -79,6 +79,5 @@ const questions = [
         "incorrect3": "incorrect answer",
         id : 9,
     }
-
 ]
 module.exports = questions

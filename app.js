@@ -1,5 +1,6 @@
 //require("dotenv").config()
 const cors = require('cors');
+const fs = require('fs')
 const logger = require("./logger");
 const express = require('express');
 
@@ -38,6 +39,20 @@ app.get('/questions/:id', (req, res) => {
   }else{
       res.status(404).send("Error - ID out of range")
   }
+})
+
+app.post('/questions/create', (req, res) => {
+  const newQuestion = req.body
+  
+  ids = questions.map(question => question.id)
+  maxID = Math.max(...ids)
+
+  maxID += 1
+  newQuestion.id = maxID
+  questions.push(newQuestion)
+  
+  console.log(newQuestion)
+  res.send(newQuestion)
 })
 
 app.listen(port, () => {
