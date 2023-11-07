@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "battle-test": "jest --verbose client/battle.test.js",
+    "hub-test": "jest --verbose client/hub.test.js",
+    "app-test": "jest --verbose app.test.js"
   },
   "keywords": [],
   "author": "",
