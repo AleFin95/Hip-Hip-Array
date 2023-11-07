@@ -56,12 +56,22 @@ async function CheckAnswers(e){
     //console.log(questions.length);
     const randIdx = Math.floor(Math.random()*(questions.length-0)) //generates a random id
 
-    if (!arr.includes(randIdx)){
+    const chosenAnswer = e.target.outerText;
+
+    if(arr.length === questions.length){
+        console.log("GAME DONE");
+    } 
+    else if(arr.includes(randIdx)){
+        CheckAnswers(e);
+    }
+    else {
         arr.push(randIdx) //adds id to array
         const randQuestion = await fetch(`http://localhost:3000/questions/${randIdx}`) //fetches from api
         const finalRandomQuestion = await randQuestion.json();
         console.log(finalRandomQuestion)
         
+        const correctAnswer = finalRandomQuestion["correct"]
+
         answerArray.push(finalRandomQuestion["correct"])   //add each question to an array
         answerArray.push(finalRandomQuestion["incorrect1"])
         answerArray.push(finalRandomQuestion["incorrect2"])
@@ -71,30 +81,21 @@ async function CheckAnswers(e){
 
         questionNum.textContent = i;
         i++;
-        question.textContent = finalRandomQuestion["Question"]
-        console.log(e);
-        console.log(e.target.outerText + " TEST 1");
-        //console.log(answerArray[0] + " TEST 2");
-        if (e.target.outerText === answerArray["correct"]){
+        question.textContent = finalRandomQuestion["Question"] 
+
+        if (chosenAnswer === correctAnswer){
             console.log("correct")
         }else{
             console.log("incorrect")
         }
 
-        // setTimeout(() => {
-        //     answer1.textContent = randomisedAnswerArray[0],
-        //     answer2.textContent = randomisedAnswerArray[1],
-        //     answer3.textContent = randomisedAnswerArray[2],
-        //     answer4.textContent = randomisedAnswerArray[3]
-        // }, 500)
-
-        }
-        
-        if(arr.length === questions.length){
-            console.log("GAME DONE");
-        }
-
+        answer1.textContent = randomisedAnswerArray[0];
+        answer2.textContent = randomisedAnswerArray[1];
+        answer3.textContent = randomisedAnswerArray[2];
+        answer4.textContent = randomisedAnswerArray[3];
         answerArray.length = 0;
+
+    } 
 }
 
 const answer1 = document.querySelector("#answer1")
