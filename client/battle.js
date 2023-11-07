@@ -111,3 +111,4 @@ answer3.addEventListener("click", CheckAnswers)
 const answer4 = document.querySelector("#answer4")
 answer4.addEventListener("click", CheckAnswers)
 
+module.exports = {shuffleArray, CheckAnswers}
