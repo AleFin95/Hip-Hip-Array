@@ -29,5 +29,5 @@ const response = await fetch ("http://localhost:3000/questions/create", options)
     e.target.incorrect2.value=""
     e.target.incorrect3.value=""
     alert ("Question successfully added!")
-  }
+  } 
 }
