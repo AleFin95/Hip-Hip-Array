@@ -1,15 +1,28 @@
 //randomQuestion();
 // health tracking section 
-const difficulty = require("./hub") 
+//const difficulty = require("./hub") 
+const urlparams = new URLSearchParams(window.location.search) 
+let difficultyNewValue = urlparams.get('difficulty');
+
+const urlparamsMedium = new URLSearchParams(window.location.search) 
+difficultyNewValue = urlparamsMedium.get('difficulty');
+
+console.log(difficultyNewValue);
+
+
+//let value = document.getElementById("symbolEasy")
+//let newValue = value.getAttribute("data-value")
+//console.log(newValue)
+
 let Hval = 0
 let Sval = 0
-if (difficulty === "easy"){ //if easy
+if (difficultyNewValue === "easy"){ //if easy
     Hval = 50 //sets damage multipliers
     Sval = 10
-} else if (difficulty === "medium"){
+} else if (difficultyNewValue === "medium"){
     Hval = 30
     Sval = 20
-}else if (difficulty === "hard"){
+}else if (difficultyNewValue === "hard"){
     Hval = 20
     Sval = 30
 }else{
