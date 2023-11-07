@@ -28,8 +28,6 @@ describe("shuffleArray", () => {
     
         expect(shuffledArray.length).toBe(originalArray.length);
       });
-
-
 })
 
 describe("checkAnswers", () => {
