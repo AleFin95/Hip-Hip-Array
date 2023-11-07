@@ -59,39 +59,6 @@ function shuffleArray(array) { //randomises the answer array
 }
 
 
-async function randomQuestion(){ // calls for a random question
-
-    const arr = []
-    console.log("Hit")
-    const questionData = await fetch(`http://localhost:3000/questions`);
-    //const questions = await fetch(`https://hip-hip.onrender.com/questions/${randIdx}`)
-    const questions = await questionData.json();
-    //console.log(questions.length);
-    const randIdx = Math.floor(Math.random()*(questions.length-0)) //generates a random id
-
-    if (!arr.includes(randIdx)){
-        arr.push(randIdx) //adds id to array
-        const randQuestion = await fetch(`http://localhost:3000/questions/${randIdx}`) //fetches from api
-        const finalRandomQuestion = await randQuestion.json();
-        console.log(finalRandomQuestion)
-        
-        const answerArray = []
-        answerArray.push(finalRandomQuestion["correct"])   //add each question to an array
-        answerArray.push(finalRandomQuestion["incorrect1"])
-        answerArray.push(finalRandomQuestion["incorrect2"])
-        answerArray.push(finalRandomQuestion["incorrect3"])
-
-        console.log(answerArray);
-        const randomisedAnswerArray = shuffleArray(answerArray)
-        console.log(randomisedAnswerArray);
-
-        answer1.textContent = randomisedAnswerArray[0];
-        answer2.textContent = randomisedAnswerArray[1];
-        answer3.textContent = randomisedAnswerArray[2];
-        answer4.textContent = randomisedAnswerArray[3];
-        //return answerArray["correct"];
-        }
-}
 
 const arr = []
 const answerArray = []
@@ -106,12 +73,8 @@ async function CheckAnswers(e){
 
     const chosenAnswer = e.target.outerText;
 
-    if(currentHealthH.value < 1){ //checks henrys health 
-        console.log("Congratulations you beat Henry");
-    } else if (currentHealthS.value < 1){
-        console.log("you suck at this")
-    }
-    else if(arr.includes(randIdx)){ //checks players health
+
+    if(arr.includes(randIdx)){ //checks players health
         CheckAnswers(e);
     }
     else {
@@ -139,6 +102,11 @@ async function CheckAnswers(e){
         }else{
             console.log("incorrect")
             setStudentHealth(Sval)
+        }
+        if(currentHealthH.value < 1){ //checks henrys health 
+            console.log("Congratulations you beat Henry");
+        } else if (currentHealthS.value < 1){
+            console.log("you suck at this")
         }
 
         answer1.textContent = randomisedAnswerArray[0];
