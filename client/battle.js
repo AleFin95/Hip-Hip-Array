@@ -1,8 +1,8 @@
 //randomQuestion();
 // health tracking section 
+const difficulty = require("./hub") 
 let Hval = 0
 let Sval = 0
-let difficulty = "medium" //sets and checks difficulty of fight
 if (difficulty === "easy"){ //if easy
     Hval = 50 //sets damage multipliers
     Sval = 10
