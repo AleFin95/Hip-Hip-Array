@@ -1,63 +1,83 @@
-body {
-    margin : 0;
-    border: 0;
+#mainBox {
+    display: flex;
+    background: url(assets/battlecell.jpg);
     background-size: cover;
-    background-color: brown;
-    font-family: monospace;  
+    justify-content: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    align-items: flex-end;
+    text-align: justify;
+    min-height: 100vh;
+    max-height: 100vh;
+    
 }
 
-section {
+#boardBox{
     display: flex;
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    flex-wrap: wrap;
+    background-color: rgba(50, 205, 50, 0.142);
+    justify-content: space-between;
+    text-align:justify;
     width: 100%;
+    max-width: 100%;
+    height: auto;
     min-height: 20%;
-    transform: translate(-50%, 100%);
-  
-    padding: 1rem;
-  
-    background-color: rgba(179, 88, 88, 0.198);
-    border-radius: 100rem;
-  
-    
-  }
+    overflow: hidden;
+}
 
 
 #questionBox{
- display: flex;
-    flex-direction: column ;
+    display: flex;
+    flex-wrap: wrap;
     align-items: normal;
+    position: relative;
     justify-content: space-evenly;
-    width: 50%;
-    box-sizing: border-box;
-    transform: translate(20%, 100%);
+    border: 10px solid rgb(98, 22, 22);
+    padding: 20px;
+    max-width: 50%;
+    width: 40%;
+    
 }
+
+
 #answers{
     display: flex;
-       flex-direction: row ;
-       align-items: normal;
-       justify-content: space-evenly;
-       left: 70%;
-       top: 50%;
-       transform: translate(20%, 100%);
-       box-sizing: border-box;
-       padding: 1rem;
-       position: fixed;
-       
-
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: normal;
+    justify-content: space-evenly;
+    border: 10px solid rgb(98, 22, 22);
+    padding: 20px;
+    max-width: 50%;
+    width: 100%;
+    flex-direction: row;
+      
    }
 
+
 p {
-    border: 2px solid black ;
+    display: flex;
+    flex-wrap: wrap;
+    border: 8px solid black ;
     border-radius: 10%;
     height: 20px;
     padding: 20px 0px;
     width: 50%;
     text-align: center;
+    background-color: antiquewhite;
+    max-width: 50%;
+    overflow: hidden;  
+    font-size: 2vw;
+    
 }
 
 p:hover {
 background-color: darkmagenta;
 }
+
+#answers p{
+    width: 40%;
+}
+
 
