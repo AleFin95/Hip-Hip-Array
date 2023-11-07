@@ -1,6 +1,6 @@
-#mainBox {
+#body{
     display: flex;
-    background: url(assets/battlecell.jpg);
+    /* background: url(assets/battlecell.jpg); */
     background-size: cover;
     justify-content: center;
     background-repeat: no-repeat;
@@ -13,6 +13,12 @@
     
 }
 
+progress{
+    height: 40px;
+    width: 400px;
+    content: "100/100";
+    color:blueviolet
+}
 #boardBox{
     display: flex;
     flex-wrap: wrap;

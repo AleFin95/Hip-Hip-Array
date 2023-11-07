@@ -8,19 +8,24 @@
     <link rel="stylesheet" href="./battle.css ">
     <link rel="icon" type="image/png" href="./assets/icon.png" sizes="64x64">
 </head>
-<body id="mainBox">
+
+<body>
+    <progress class= "healthBar" value="100" max="100" id="henryHealth"></progress>
+    <br>
+    <progress class= "healthBar" value="100" max="100" id="studentHealth"></progress>
+    <button onclick="reduceHealth()">Attack</button>
     <div class="avatar1"></div>
     <div class="avatar2"></div>
     <section id="boardBox">
         <div id ="questionBox">
-            <p id="questionNum"> question number</p>
-            <p id="question"> actual question</p>
+            <p id="questionNum"></p>
+            <p id="question"></p>
         </div>
         <div id ="answers">
-            <p id="answer1"> first correct </p>
-            <p id="answer2"> second incorrect</p>
-            <p id="answer3">third incorrect</p>
-            <p id="answer4"> fourth incorrect</p>
+            <p id="answer1"></p>
+            <p id="answer2"></p>
+            <p id="answer3"></p>
+            <p id="answer4"></p>
         </div>
     </section>
 </body>
