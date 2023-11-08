@@ -90,8 +90,8 @@ button{
     cursor: pointer;
     font-weight: 600;
     border-radius: 3px;
-    padding: 12px 24px;
-    padding-bottom: 2%;
+    padding: 20px 24px;
+    margin-bottom: 1%;
     border: 0;
     color: #fff;
     background: #c10326;
