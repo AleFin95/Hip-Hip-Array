@@ -92,6 +92,8 @@ async function loadNextQuestion() {
     if(visibilityCheck = 1){
         let Qbox = document.getElementById("boardBox");
         let startBox = document.getElementById("start")
+        let healthBars = document.getElementById("Bars")
+        healthBars.style.visibility = "visible"
         Qbox.style.visibility = "visible";
         startBox.style.visibility = "hidden"
         visibilityCheck = visibilityCheck +1    
@@ -155,6 +157,8 @@ async function CheckAnswers(e) {
         element.style.visibility = "visible";
         let Qbox = document.getElementById("boardBox");
         Qbox.style.visibility = "hidden";
+        let healthBars = document.getElementById("Bars")
+        healthBars.style.visibility = "hidden"
         endMessage.textContent = "Congratulations though hath slain the king"
         return
     } else if (currentHealthS.value < 1) {
@@ -162,6 +166,8 @@ async function CheckAnswers(e) {
         element.style.visibility = "visible";
         let Qbox = document.getElementById("boardBox");
         Qbox.style.visibility = "hidden";
+        let healthBars = document.getElementById("Bars")
+        healthBars.style.visibility = "hidden"
         endMessage.textContent = "Though hath been slain! Tryeth againeth";
         return 
     }

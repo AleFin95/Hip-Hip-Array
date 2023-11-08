@@ -23,24 +23,30 @@ p {
 }
 #Bars{
     position: absolute;
-    width: 60%;
-    height: 70%
+    width: 90%;
+    height: 70%;
+    visibility:hidden;
+
 }
 
 #tudor{
-    display: absolute;
-    left: 40%;
+    position: absolute;
+    left: 10%;
+    top: 5%;
     text-align: center;
     border: 2px solid black;
     border-radius: 15px;
-    width: 50%;
+    width: 35%;
     height: 20%
 }
 #student{
+    position: absolute;
+    left: 65%;
+    top: 65%;
     text-align: center;
     border: 2px solid black;
     border-radius: 15px;
-    width: 30%;
+    width: 35%;
     height: 20%
 
 }
@@ -100,7 +106,7 @@ p {
 #boardBox{
     display: flex;
     position: absolute;
-    bottom: 5%;
+    bottom: 2%;
     left:2%;
     box-sizing: border-box;
     flex-wrap: wrap;
