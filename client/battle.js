@@ -153,13 +153,19 @@ async function CheckAnswers(e) {
     if (currentHealthH.value < 1) {
         let element = document.getElementById("endBox");
         element.style.visibility = "visible";
-        Qbox.style.visibility = "visible";
+        let Qbox =  document.getElementById("boardBox")
+        Qbox.style.visibility = "hidden";
+        console.log(Qbox);
         endMessage.textContent = "Congratulations though hath slain the king"
+        return
     } else if (currentHealthS.value < 1) {
         let element = document.getElementById("endBox");
         element.style.visibility = "visible";
-        Qbox.style.visibility = "visible";
+        let Qbox =  document.getElementById("boardBox")
+        console.log(Qbox);
+        Qbox.style.visibility = "hidden";
         endMessage.textContent = "Though hath been slain! Tryeth againeth";
+        return
     }
   
     // Load the next question
