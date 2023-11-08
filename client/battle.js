@@ -150,7 +150,6 @@ async function CheckAnswers(e) {
   }
   
   selectedQuestion = null;  
-  loadNextQuestion();
   
 const answer1 = document.querySelector("#answer1")
 answer1.addEventListener("click", CheckAnswers)
