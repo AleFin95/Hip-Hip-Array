@@ -48,7 +48,6 @@ h2{
     margin: 2% 0;
     padding-bottom: 5%;
     font-size: 60px;
-    font-family: "Bebas Neue";
     text-decoration: underline;
     font-weight: bold;
 }
@@ -84,4 +83,7 @@ h2{
     margin-top: 2%;
     text-align: center;
     font-size: 2em;
+}
+*{
+    font-family: 'MedievalSharp';
 }
