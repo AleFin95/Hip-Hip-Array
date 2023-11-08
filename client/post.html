@@ -8,25 +8,29 @@
     <link rel="stylesheet" href="post.css">
 </head>
 <body>
-    <h1>Create your own question!</h1>
-    <form id="createQuestion">
+    <div class="container">
+     <div class="contentBox">
+        <h1>Create your own question!</h1>
+        <form id="createQuestion">
         <label for="question">Question:</label><br>
-        <input type="text" id="question" name="question" required><br>
+        <input type="text" class="field" id="question" name="question" required><br>
         <label for="correct">Correct:</label><br>
-        <input type="text" id="correct" name="correct" required><br>
+        <input type="text" class="field" id="correct" name="correct" required><br>
         <label for="incorrect1">Incorret1:</label><br>
-        <input type="text" id="incorrect1" name="incorrect1" required><br>
+        <input type="text" class="field" id="incorrect1" name="incorrect1" required><br>
         <label for="incorrect2">Incorrect2:</label><br>
-        <input type="text" id="incorrect2" name="incorrect2" required><br>
+        <input type="text" class="field" id="incorrect2" name="incorrect2" required><br>
         <label for="incorrect3">Incorrect3:</label><br>
-        <input type="text" id="incorrect3" name="incorrect3" required><br>
+        <input type="text" class="field" id="incorrect3" name="incorrect3" required><br>
         <input id="questionSubmit" type=submit value="submit"/>
       </form>
       <a href="hub.html">
         <button>
-     <p>Return to homepage</p>
+     <p id="returnButton">Return to homepage</p>
         </button>
-    </a>
+     </a>
+     </div>  
+    </div>
 </body>
 </html>
 

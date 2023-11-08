@@ -3,12 +3,9 @@
     white-space: nowrap;
 }
 
-#backgroundBox{
-    background-color: purple;
-    background: url(assets/tudor_houses.jpg);
+body{
+    background-image: url(assets/grass-plain.jpeg);
     background-size: cover;
-    justify-content: center;
-    border: 2px solid black;
 }
 
 #pannelBox{
@@ -37,10 +34,13 @@
 
 h1{
     font-size: 100px ;
-    border: 2px solid black;
+    text-decoration: underline;
+    border: 3px solid black;
+    border-top: 30%;
     width: 50%;
     text-align: center;
     margin: auto;
+    margin-top: 2%;
 }
 
 h2{
@@ -48,8 +48,6 @@ h2{
     margin: 2% 0;
     padding-bottom: 5%;
     font-size: 60px;
-    font-family: "Bebas Neue";
-    text-decoration: underline;
     font-weight: bold;
 }
 
@@ -84,4 +82,27 @@ h2{
     margin-top: 2%;
     text-align: center;
     font-size: 2em;
+}
+
+button{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 20px 24px;
+    margin-bottom: 1%;
+    border: 0;
+    color: #fff;
+    background: #c10326;
+    line-height: 1.15;
+    font-size: 16px;
+    :hover {
+    transition: all .1s ease;
+    box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1DE9B6;
+    }
+}
+
+*{
+    font-family: 'MedievalSharp';
 }

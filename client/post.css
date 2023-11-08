@@ -1,7 +1,134 @@
+
+
 h1{
+    position : relative;
     text-align: center;
+    font-size: 40px;
+    padding-top: 5%;
+
 }
 
 form{
     text-align: center;
+    padding: 25px 40px;
+    
 }
+
+.container{
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+
+    
+}
+
+.container:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: url(./assets/battlecell.jpg) no-repeat center;
+    background-size: cover;
+    z-index: -1;
+    filter:blur(5px);
+
+
+
+}
+
+.contentBox{
+    max-width: 850px;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(164, 16, 16);
+    width: 100%;
+    height: 100%;
+    margin: 30px;
+    border-radius: 45px;
+    border: 2px solid black;
+    
+}
+
+.field {
+    width: 100%;
+    height: 100px; 
+    outline: none;
+    background-color: linen;
+    border: 2px solid rgba(0,0,0,0);
+    font-size: 30px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    transition: 2ms;
+    border-radius: 45px;
+
+}
+label {
+    font-size: 30px;
+}
+
+
+#questionSubmit{
+    width: 50%;
+    height: 80px; 
+    font-size: 30px;
+    border-radius: 45px;
+}
+
+#returnButton {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+#returnButton:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid #3498db;
+}
+
+#returnButton:hover {
+    background-color: #2980b9;
+}
+
+
+
+
+/*input[type="text"] {
+    height: 100px; 
+}
+*/
+
+
+.field:focus{
+    background-color:cornsilk;
+    border: 2px solid rgbs(30, 85, 250, 0.47);
+}
+
+
+/*@media screen and (max-width:850px){
+    .contentBox {
+     grid-template-columns: 1fr ;
+    }
+ }
