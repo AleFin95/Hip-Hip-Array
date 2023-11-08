@@ -36,6 +36,7 @@ let currentHealthH = document.getElementById("henryHealth")
 let currentHealthS = document.getElementById("studentHealth")
 // let currentHealthH.value = 100 //sets health for both student and henry as global variables
 // let currentHealthS.value = 100
+
 const setHenryHealth  = function(val){ //updates henry's health 
      //gets value of henry health from html
     currentHealthH.value = currentHealthH.value - val //updates health dependent on difficulty
@@ -64,7 +65,18 @@ function shuffleArray(array) { //randomises the answer array
 const arr = []
 const answerArray = []
 let i = 1;
+let visibilityCheck = 1
 async function CheckAnswers(e){
+    if(visibilityCheck = 1){
+        var Qbox = document.getElementById("boardBox");
+        var startBox = document.getElementById("start")
+        Qbox.style.visibility = "visible";
+        startBox.style.visibility = "hidden"
+        console.log(currentHealthS)
+        currentHealthS = currentHealthS + Sval
+        
+        visibilityCheck ++
+    }
     e.preventDefault()
     const questionData = await fetch(`http://localhost:3000/questions`);
     //const questions = await fetch(`https://hip-hip.onrender.com/questions/${randIdx}`)
@@ -125,6 +137,9 @@ async function CheckAnswers(e){
 
     } 
 }
+
+const startButton = document.querySelector(`#start`)
+startButton.addEventListener("click", CheckAnswers)
 
 const answer1 = document.querySelector("#answer1")
 //const array = randomQuestion();
