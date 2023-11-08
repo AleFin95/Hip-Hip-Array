@@ -7,9 +7,6 @@ let difficultyNewValue = urlparams.get('difficulty');
 // const urlparamsMedium = new URLSearchParams(window.location.search) 
 // difficultyNewValue = urlparamsMedium.get('difficulty');
 
-console.log(difficultyNewValue);
-
-
 //let value = document.getElementById("symbolEasy")
 //let newValue = value.getAttribute("data-value")
 //console.log(newValue)
