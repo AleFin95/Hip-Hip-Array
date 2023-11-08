@@ -96,8 +96,8 @@ async function CheckAnswers(e){
         questionNum.textContent = (`Question ${i}`); //counts and increments question number
         i++;
         question.textContent = finalRandomQuestion["Question"]  //sets question in html
-        console.log(chosenAnswer + "hit")
-        console.log(correctAnswer + "HIT2")
+        // console.log(chosenAnswer + "hit")
+        // console.log(correctAnswer + "HIT2")
         if (chosenAnswer === correctAnswer){ //checks if chosen answer is correct or not 
             console.log("correct")
             setHenryHealth(Hval)
@@ -106,9 +106,15 @@ async function CheckAnswers(e){
             setStudentHealth(Sval)
         }
         if(currentHealthH.value < 1){ //checks henrys health 
-            console.log("Congratulations you beat Henry");
+            var element = document.getElementById("endBox");
+            element.style.visibility = "visible";
+            endMessage.textContent = "Congratulations though hath slain the king"
+            //make box appear with message
         } else if (currentHealthS.value < 1){
-            console.log("you suck at this")
+            var element = document.getElementById("endBox");
+            element.style.visibility = "visible";
+            endMessage.textContent = "Though hath been slain! Tryeth againeth";
+            // make box appear with different message
         }
 
         answer1.textContent = randomisedAnswerArray[0];
