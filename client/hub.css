@@ -1,3 +1,8 @@
+#allOptions{
+    display: flex;
+    white-space: nowrap;
+}
+
 #backgroundBox{
     background-color: purple;
     background: url(assets/tudor_houses.jpg);
@@ -13,10 +18,11 @@
     display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 90%;
   height: 400px;
   padding-bottom: 40%;
   border-radius: 40px;
+  justify-content: space-evenly
 }
 
 #titleBox{
@@ -39,14 +45,17 @@ h1{
 
 h2{
     text-align: center;
+    margin: 2% 0;
+    padding-bottom: 5%;
     font-size: 60px;
     font-family: "Bebas Neue";
     text-decoration: underline;
     font-weight: bold;
 }
 
-#henry{
-    height: 550px; 
+.henry{
+    height: 70%;
+    width: 90%; 
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -54,14 +63,25 @@ h2{
     border: 1px solid;
     margin-top: 2%;
     margin-bottom: 2px;
-    max-width: 900px; 
     border-radius: 20px;
 }
 
-#symbol{
+.symbol{
+    padding-top: 2%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto; 
+    margin-right: auto; 
     width: 30%;
     border-radius: 40px;
+}
+
+.levelBoxes{
+    display: flex;
+    align-items: flex-end;
+}
+
+.difficulty{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 2em;
 }

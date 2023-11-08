@@ -1,20 +1,34 @@
 //randomQuestion();
 // health tracking section 
+//const difficulty = require("./hub") 
+const urlparams = new URLSearchParams(window.location.search) 
+let difficultyNewValue = urlparams.get('difficulty');
+
+// const urlparamsMedium = new URLSearchParams(window.location.search) 
+// difficultyNewValue = urlparamsMedium.get('difficulty');
+
+//let value = document.getElementById("symbolEasy")
+//let newValue = value.getAttribute("data-value")
+//console.log(newValue)
+
 let Hval = 0
 let Sval = 0
-let difficulty = "medium" //sets and checks difficulty of fight
-if (difficulty === "easy"){ //if easy
+if (difficultyNewValue === "easy"){ //if easy
     Hval = 50 //sets damage multipliers
     Sval = 10
-} else if (difficulty === "medium"){
+    console.log("Difficulty is easy")
+} else if (difficultyNewValue === "medium"){
     Hval = 30
     Sval = 20
-}else if (difficulty === "hard"){
+    console.log("Difficulty is medium")
+}else if (difficultyNewValue === "hard"){
     Hval = 20
     Sval = 30
+    console.log("Difficulty is hard")
 }else{
     Hval = 10
     Sval = 35
+    console.log("Difficulty is bosss")
 }
 // // let currentHealthH = document.getElementById("henryHealth")
 // let currentHealthS = document.getElementById("studentHealth")
@@ -82,7 +96,8 @@ async function CheckAnswers(e){
         questionNum.textContent = (`Question ${i}`); //counts and increments question number
         i++;
         question.textContent = finalRandomQuestion["Question"]  //sets question in html
-
+        console.log(chosenAnswer + "hit")
+        console.log(correctAnswer + "HIT2")
         if (chosenAnswer === correctAnswer){ //checks if chosen answer is correct or not 
             console.log("correct")
             setHenryHealth(Hval)
