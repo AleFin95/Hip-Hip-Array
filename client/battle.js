@@ -7,9 +7,6 @@ let difficultyNewValue = urlparams.get('difficulty');
 // const urlparamsMedium = new URLSearchParams(window.location.search) 
 // difficultyNewValue = urlparamsMedium.get('difficulty');
 
-console.log(difficultyNewValue);
-
-
 //let value = document.getElementById("symbolEasy")
 //let newValue = value.getAttribute("data-value")
 //console.log(newValue)
@@ -39,6 +36,7 @@ let currentHealthH = document.getElementById("henryHealth")
 let currentHealthS = document.getElementById("studentHealth")
 // let currentHealthH.value = 100 //sets health for both student and henry as global variables
 // let currentHealthS.value = 100
+
 const setHenryHealth  = function(val){ //updates henry's health 
      //gets value of henry health from html
     currentHealthH.value = currentHealthH.value - val //updates health dependent on difficulty
@@ -61,6 +59,7 @@ function shuffleArray(array) { //randomises the answer array
      }
 //     return array // returns randomised answers
 }
+<<<<<<< HEAD
 
 const questions = [];
 
@@ -119,6 +118,30 @@ const arr = []
 const answerArray = []
 let isAnswerSubmitted = false
 let isFetchingQuestion = false;
+=======
+const arr = []
+const answerArray = []
+let i = 1;
+let visibilityCheck = 1 //variable so that code will only run once
+async function CheckAnswers(e){
+    if(visibilityCheck = 1){
+        var Qbox = document.getElementById("boardBox");
+        var startBox = document.getElementById("start")
+        Qbox.style.visibility = "visible";
+        startBox.style.visibility = "hidden"
+        visibilityCheck = visibilityCheck +1    
+    }
+
+    console.log("going through main" + visibilityCheck)
+    e.preventDefault()
+    const questionData = await fetch(`http://localhost:3000/questions`);
+    //const questions = await fetch(`https://hip-hip.onrender.com/questions/${randIdx}`)
+    const questions = await questionData.json();
+    //console.log(questions.length);
+    const randIdx = Math.floor(Math.random()*(questions.length-0)) //generates a random id
+
+    const chosenAnswer = e.target.outerText;
+>>>>>>> 41a4cdd8ca4099f8a260e969b6bb16a4f3e21753
 
 
 async function CheckAnswers(e) {
@@ -161,6 +184,51 @@ async function CheckAnswers(e) {
   
   
 
+<<<<<<< HEAD
+=======
+        answerArray.push(finalRandomQuestion["correct"])   //add each question to an array
+        answerArray.push(finalRandomQuestion["incorrect1"])
+        answerArray.push(finalRandomQuestion["incorrect2"])
+        answerArray.push(finalRandomQuestion["incorrect3"])
+
+        const randomisedAnswerArray = shuffleArray(answerArray) //randomise question order
+
+        questionNum.textContent = (`Question ${i}`); //counts and increments question number
+        i++;
+        question.textContent = finalRandomQuestion["Question"]  //sets question in html
+        // console.log(chosenAnswer + "hit")
+        // console.log(correctAnswer + "HIT2")
+        if (chosenAnswer === correctAnswer){ //checks if chosen answer is correct or not 
+            console.log("correct")
+            setHenryHealth(Hval)
+        }else{
+            console.log("incorrect")
+            setStudentHealth(Sval)
+        }
+        if(currentHealthH.value < 1){ //checks henrys health 
+            var element = document.getElementById("endBox");
+            element.style.visibility = "visible";
+            endMessage.textContent = "Congratulations though hath slain the king"
+            //make box appear with message
+        } else if (currentHealthS.value < 1){
+            var element = document.getElementById("endBox");
+            element.style.visibility = "visible";
+            endMessage.textContent = "Though hath been slain! Tryeth againeth";
+            // make box appear with different message
+        }
+
+        answer1.textContent = randomisedAnswerArray[0];
+        answer2.textContent = randomisedAnswerArray[1];
+        answer3.textContent = randomisedAnswerArray[2];
+        answer4.textContent = randomisedAnswerArray[3];
+        answerArray.length = 0;
+
+    } 
+}
+>>>>>>> 41a4cdd8ca4099f8a260e969b6bb16a4f3e21753
+
+const startButton = document.querySelector(`#start`)
+startButton.addEventListener("click", CheckAnswers)
 
 const answer1 = document.querySelector("#answer1")
 answer1.addEventListener("click", CheckAnswers)

@@ -19,6 +19,17 @@ progress{
     content: "100/100";
     color:blueviolet
 }
+#start{
+    visibility:visible
+}
+#endBox{
+    border: 2px solid black;
+    padding: 10px 0;
+    width:50%;
+    display: block;
+    visibility: hidden
+}
+
 #boardBox{
     display: flex;
     flex-wrap: wrap;
@@ -30,6 +41,7 @@ progress{
     height: auto;
     min-height: 20%;
     overflow: hidden;
+    visibility: hidden
 }
 
 
