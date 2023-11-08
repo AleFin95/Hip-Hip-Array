@@ -1,6 +1,5 @@
 #body{
-    display: flex;
-    /* background: url(assets/battlecell.jpg); */
+    display: fixed;
     background-size: cover;
     justify-content: center;
     background-repeat: no-repeat;
@@ -8,37 +7,107 @@
     width: 100%;
     align-items: flex-end;
     text-align: justify;
-    min-height: 100vh;
-    max-height: 100vh;
+    height: 100%
     
 }
+p {
+    border: 2px solid black ;
+    border-radius: 15px;
+    text-align: center;
+    width: 50%;
+    overflow: hidden;  
+    font-size: 2vw;
+    box-sizing: border-box;
+    margin: 5px auto;
+    
+}
+#Bars{
+    position: absolute;
+    width: 60%;
+    height: 70%
+}
 
-progress{
-    height: 40px;
-    width: 400px;
-    content: "100/100";
-    color:blueviolet
-}
-#start{
-    visibility:visible
-}
-#endBox{
+#tudor{
+    display: absolute;
+    left: 40%;
+    text-align: center;
     border: 2px solid black;
+    border-radius: 15px;
+    width: 50%;
+    height: 20%
+}
+#student{
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 30%;
+    height: 20%
+
+}
+#tudor p{
+    border: none;
+    padding: 2px 0;
+    margin: 0;
+    font-size: 1.5em;
+
+}
+#student p{
+    border: none;
+    padding: 2px 0;
+    margin: 0;
+    font-size: 1.5em;
+
+}
+#tudor progress{
+    height: 70%;
+    width: 90%;
+    content: "100/100";
+}
+
+#student progress{
+    height: 70%;
+    width: 90%;
+    content: "100/100";
+}
+
+#start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility:visible;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    height: 40%;
+}
+
+#endBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+    border: 2px solid black;
+    border-radius: 15px;
     padding: 10px 0;
     width:50%;
-    display: block;
+    height: 40%;
     visibility: hidden
 }
 
 #boardBox{
     display: flex;
+    position: absolute;
+    bottom: 5%;
+    left:2%;
+    box-sizing: border-box;
     flex-wrap: wrap;
-    background-color: rgba(50, 205, 50, 0.142);
     justify-content: space-between;
     text-align:justify;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
+    width: 97%;
+    height: 35%;
     min-height: 20%;
     overflow: hidden;
     visibility: hidden
@@ -47,17 +116,25 @@ progress{
 
 #questionBox{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: normal;
     position: relative;
     justify-content: space-evenly;
-    border: 10px solid rgb(98, 22, 22);
-    padding: 20px;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 5px;
     max-width: 50%;
-    width: 40%;
-    
+    width: 47%;
 }
 
+#questionNum{
+    height: 30%;
+    width: 95%
+}
+#question{
+    height:70%;
+    width: 95%
+}
 
 #answers{
     display: flex;
@@ -65,8 +142,9 @@ progress{
     text-align: center;
     align-items: normal;
     justify-content: space-evenly;
-    border: 10px solid rgb(98, 22, 22);
-    padding: 20px;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5px;
     max-width: 50%;
     width: 100%;
     flex-direction: row;
@@ -74,28 +152,16 @@ progress{
    }
 
 
-p {
-    display: flex;
-    flex-wrap: wrap;
-    border: 8px solid black ;
-    border-radius: 10%;
-    height: 20px;
-    padding: 20px 0px;
-    width: 50%;
-    text-align: center;
-    background-color: antiquewhite;
-    max-width: 50%;
-    overflow: hidden;  
-    font-size: 2vw;
-    
-}
-
-p:hover {
-background-color: darkmagenta;
+#answers p:hover {
+    background-color: rgb(129, 129, 129);
 }
 
 #answers p{
-    width: 40%;
+    box-sizing: border-box;
+    width: 48%;
+    height: 40%;
+    padding: 5px auto;
+    margin: 5px auto;
 }
 
 

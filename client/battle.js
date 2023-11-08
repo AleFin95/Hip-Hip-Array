@@ -149,7 +149,7 @@ async function CheckAnswers(e) {
       console.log("Incorrect");
       setStudentHealth(Sval);
     }
-  
+
     if (currentHealthH.value < 1) {
         let element = document.getElementById("endBox");
         element.style.visibility = "visible";
@@ -163,7 +163,7 @@ async function CheckAnswers(e) {
         let Qbox = document.getElementById("boardBox");
         Qbox.style.visibility = "hidden";
         endMessage.textContent = "Though hath been slain! Tryeth againeth";
-        return
+        return 
     }
   
     // Load the next question
