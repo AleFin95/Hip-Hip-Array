@@ -59,24 +59,20 @@ function shuffleArray(array) { //randomises the answer array
     }
     return array // returns randomised answers
 }
-
-
-
 const arr = []
 const answerArray = []
 let i = 1;
-let visibilityCheck = 1
+let visibilityCheck = 1 //variable so that code will only run once
 async function CheckAnswers(e){
     if(visibilityCheck = 1){
         var Qbox = document.getElementById("boardBox");
         var startBox = document.getElementById("start")
         Qbox.style.visibility = "visible";
         startBox.style.visibility = "hidden"
-        console.log(currentHealthS)
-        currentHealthS = currentHealthS + Sval
-        
-        visibilityCheck ++
+        visibilityCheck = visibilityCheck +1    
     }
+
+    console.log("going through main" + visibilityCheck)
     e.preventDefault()
     const questionData = await fetch(`http://localhost:3000/questions`);
     //const questions = await fetch(`https://hip-hip.onrender.com/questions/${randIdx}`)
