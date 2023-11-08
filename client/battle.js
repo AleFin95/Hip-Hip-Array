@@ -37,6 +37,8 @@ if (difficultyNewValue === "easy"){ //if easy
 // let currentHealthS = document.getElementById("studentHealth")
 let currentHealthH = document.getElementById("henryHealth")
 let currentHealthS = document.getElementById("studentHealth")
+
+let visibilityCheck = 1
 // let currentHealthH.value = 100 //sets health for both student and henry as global variables
 // let currentHealthS.value = 100
 const setHenryHealth  = function(val){ //updates henry's health 
@@ -86,6 +88,15 @@ const answerOptions = [];
 let selectedQuestion = null
 
 async function loadNextQuestion() {
+
+    if(visibilityCheck = 1){
+        let Qbox = document.getElementById("boardBox");
+        let startBox = document.getElementById("start")
+        Qbox.style.visibility = "visible";
+        startBox.style.visibility = "hidden"
+        visibilityCheck = visibilityCheck +1    
+    }
+
     if (questions.length === 0) {
       // If no questions are loaded, load some questions
       await loadQuestions();
@@ -140,9 +151,15 @@ async function CheckAnswers(e) {
     }
   
     if (currentHealthH.value < 1) {
-      console.log("Congratulations, you beat Henry");
+        let element = document.getElementById("endBox");
+        element.style.visibility = "visible";
+        Qbox.style.visibility = "visible";
+        endMessage.textContent = "Congratulations though hath slain the king"
     } else if (currentHealthS.value < 1) {
-      console.log("You suck at this");
+        let element = document.getElementById("endBox");
+        element.style.visibility = "visible";
+        Qbox.style.visibility = "visible";
+        endMessage.textContent = "Though hath been slain! Tryeth againeth";
     }
   
     // Load the next question
@@ -150,8 +167,11 @@ async function CheckAnswers(e) {
   }
   
   selectedQuestion = null;  
-  loadNextQuestion();
   
+
+const startButton = document.querySelector(`#start`)
+startButton.addEventListener("click", loadNextQuestion)
+
 const answer1 = document.querySelector("#answer1")
 answer1.addEventListener("click", CheckAnswers)
 
