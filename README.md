@@ -43,7 +43,7 @@ A GSCE history game to test Tudor era knowledge
     - Home page directing users to the battle page
     - Battle page successfully loading question and answers, displaying battle health and returning users back to home page after the battle has finished
 * Additional features were implemented with no bugs
-    - Allowing users to enter a form page to create and add their own questions 
+    - Allowing users to enter a form page to create and add their own questions using POST methods
     - Adding level difficulty for the battles
 * Client and server side communication is fully responsive
 * Implemented good styling for the pages and battle design
@@ -54,6 +54,7 @@ A GSCE history game to test Tudor era knowledge
 * Fixing the mis-alignnment of questions and answer pairing when fetching from API
 * Starting the game when pressing a START button with all elements and functionality paused/invisible
 * Deploying the application on Render 
+* Testing with jest and jsdom, unable to create a mock DOM and properly write and pass tests
 
 ## Bugs
 
