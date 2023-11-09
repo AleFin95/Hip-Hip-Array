@@ -1,9 +1,9 @@
 # -hip-hip-array
 
 # Tudemon
-![Screenshot of the hub page for Tudemon.](/Screenshot%202023-11-09%20at%2010.35.34.png)
+![Screenshot of the hub page for Tudemon.](/Screenshot%202023-11-09%20at%2015.10.03.png)
 
-A middle school game to test Tudor era knowledge
+A GSCE history game to test Tudor era knowledge
 
 ## Installation & Usage
 
@@ -29,7 +29,7 @@ A middle school game to test Tudor era knowledge
 * Read and understood the requirements for the project
 * Decided on the content and style of the game in order to meet those requirements
 * Created a wireframe for the basic format of the game
-* Designed a Trello board using agile framework to structure the process of the project
+* Designed a Trello board using agile framework to structure the process of the project and assign roles
 * Set up the file structure for both the client and server side, created an API for data collection and configured middleware/script files using Node
 * Implemented GET and POST methods used on the client side
 * Continuously tested functionality in order to resolve bugs 
@@ -67,7 +67,7 @@ A middle school game to test Tudor era knowledge
 
 ## Collaborators
 
-@KengiLuca @khidertar @Raeannox1 @DavidFra5er @AleFin95
+@KengiLuca @khidertar @Raeannox1 @DavidFra5er @AleFin95 
 
 
 

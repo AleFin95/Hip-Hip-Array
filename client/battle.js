@@ -29,21 +29,21 @@ if (difficultyNewValue === "easy"){ //if easy
     Hval = 30
     Sval = 20
     character.textContent = "Elizabeth"
-    let win = "the princeess"
+    win = "the princess"
     const tudorGif = document.getElementById("tudorImg")
     tudorGif.src = "./assets/elizabethNoBackground.gif"
 }else if (difficultyNewValue === "hard"){
     Hval = 20
     Sval = 30
     character.textContent = "Mary"
-    let win = "the Queen to be"
+    win = "the Queen to be"
     const tudorGif = document.getElementById("tudorImg")
     tudorGif.src = "./assets/MaryAnimationNobackground.gif"
 }else{
     Hval = 10
     Sval = 35    
     character.textContent = "Henry VIII"
-    let win  = "the King"
+    win  = "the King"
 }
 // // let currentHealthH = document.getElementById("henryHealth")
 // let currentHealthS = document.getElementById("studentHealth")
