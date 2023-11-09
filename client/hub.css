@@ -22,6 +22,10 @@ body{
   justify-content: space-evenly
 }
 
+#pannelBox:hover{
+    background-color: rgba(255, 0, 0, 0.9);
+}
+
 #titleBoxBackground{
     text-align: center;
     border-radius: 40px;
@@ -49,11 +53,11 @@ h2{
 
 .henry{
     height: 70%;
-    width: 90%; 
+    width: 90%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    position: relative; 
+    position: relative;
     border: 1px solid;
     margin-top: 2%;
     margin-bottom: 2px;
@@ -63,8 +67,8 @@ h2{
 .symbol{
     padding-top: 2%;
     display: block;
-    margin-left: auto; 
-    margin-right: auto; 
+    margin-left: auto;
+    margin-right: auto;
     width: 30%;
     border-radius: 40px;
 }
@@ -103,6 +107,9 @@ button{
 
 }
 
+button:hover{
+    background-color: rgb(26, 81, 32,0.8)
+}
 #postBox{
     border: 2px solid rgba(0, 0, 0, 0.007);
     border-radius: 25px;
