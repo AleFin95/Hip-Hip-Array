@@ -7,13 +7,15 @@
     width: 100%;
     align-items: flex-end;
     text-align: justify;
-    height: 100%
+    height: 100%;
+    background-color: rgb(224, 197, 163);
     
 }
 p {
     border: 2px solid black ;
     border-radius: 15px;
     text-align: center;
+    align-content: center;
     width: 50%;
     overflow: hidden;  
     font-size: 2vw;
@@ -29,14 +31,25 @@ p {
     
 
 }
-#avatar1{
+#tudorAvatar{
     position: absolute;
-    top: 10%;
-    right: 60%;
+    top: 2%;
+    left: 60%;
+    z-index: -1;
+    height: 70%;
+    width: 50%;
+    visibility: hidden
+}
+#studentAvatar{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    z-index: -1;
+    visibility: hidden;
 }
 #tudor{
     position: absolute;
-    left: 10%;
+    left: 18%;
     top: 5%;
     text-align: center;
     border: 2px solid black;
@@ -47,8 +60,8 @@ p {
 }
 #student{
     position: absolute;
-    left: 65%;
-    top: 65%;
+    left: 55%;
+    top: 73%;
     text-align: center;
     border: 2px solid black;
     border-radius: 15px;
@@ -137,7 +150,7 @@ p {
     justify-content: space-between;
     text-align:justify;
     width: 97%;
-    height: 35%;
+    height: 30%;
     min-height: 20%;
     overflow: hidden;
     visibility: hidden

@@ -16,21 +16,28 @@ console.log(difficultyNewValue);
 
 let Hval = 0
 let Sval = 0
+
 if (difficultyNewValue === "easy"){ //if easy
     Hval = 50 //sets damage multipliers
     Sval = 10
     character.textContent = "Edward"
     win = "The prince"
+    const tudorGif = document.getElementById("tudorImg")
+    tudorGif.src = "./assets/EdwardAnimation.gif"
 } else if (difficultyNewValue === "medium"){
     Hval = 30
     Sval = 20
     character.textContent = "Elizabeth"
     let win = "The princeess"
+    const tudorGif = document.getElementById("tudorImg")
+    tudorGif.src = "./assets/elizabethAnimation.gif"
 }else if (difficultyNewValue === "hard"){
     Hval = 20
     Sval = 30
     character.textContent = "Mary"
     let win = "The princeess"
+    const tudorGif = document.getElementById("tudorImg")
+    tudorGif.src = "./assets/MaryAnimation.gif"
 }else{
     Hval = 10
     Sval = 35    
@@ -97,7 +104,12 @@ async function loadNextQuestion() {
         let Qbox = document.getElementById("boardBox");
         let startBox = document.getElementById("start")
         let healthBars = document.getElementById("Bars")
+        let gifT = document.getElementById("tudorAvatar")
+        let gifS = document.getElementById("studentAvatar")
+
         healthBars.style.visibility = "visible"
+        gifS.style.visibility = "visible"
+        gifT.style.visibility = "visible"
         Qbox.style.visibility = "visible";
         startBox.style.visibility = "hidden"
         visibilityCheck = visibilityCheck +1    
@@ -168,6 +180,10 @@ async function CheckAnswers(e) {
         Qbox.style.visibility = "hidden";
         let healthBars = document.getElementById("Bars")
         healthBars.style.visibility = "hidden"
+        let gifT = document.getElementById("tudorAvatar")
+        let gifS = document.getElementById("studentAvatar")
+        gifS.style.visibility = "hidden"
+        gifT.style.visibility = "hidden"
         endMessage.textContent = `Congratulations though hath slain The tudor`
         return
     } else if (currentHealthS.value < 1) {
@@ -177,6 +193,10 @@ async function CheckAnswers(e) {
         Qbox.style.visibility = "hidden";
         let healthBars = document.getElementById("Bars")
         healthBars.style.visibility = "hidden"
+        let gifT = document.getElementById("tudorAvatar")
+        let gifS = document.getElementById("studentAvatar")
+        gifS.style.visibility = "hidden"
+        gifT.style.visibility = "hidden"
         endMessage.textContent = "Though hath been slain! Tryeth againeth";
         return 
     }
