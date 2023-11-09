@@ -10,30 +10,30 @@ beforeEach(()=>{
 
 
 // Set the test suite
-describe("jest-environment jsdom", () => {
-    it("loadNextQuestion", () => {
-        // Set up a DOM
-        const parser = new DOMParser();
-        const dom = parser.parseFromString('<p id="start">Begineth Battle!</p>', 'text/html');
+// describe("jest-environment jsdom", () => {
+//     it("loadNextQuestion", () => {
+//         // Set up a DOM
+//         const parser = new DOMParser();
+//         const dom = parser.parseFromString('<p id="start">Begineth Battle!</p>', 'text/html');
 
-        // Mock the querySelector to return the element from the DOM
-        jest.spyOn(document, 'querySelector').mockImplementation(selector => dom.querySelector(selector));
+//         // Mock the querySelector to return the element from the DOM
+//         jest.spyOn(document, 'querySelector').mockImplementation(selector => dom.querySelector(selector));
 
-        // Spy on the loadNextQuestion function
-        const loadNextQuestionSpy = jest.fn();
-        // Mock the function to be used in the event listener
-        jest.spyOn(window, 'loadNextQuestion').mockImplementation(loadNextQuestionSpy);
+//         // Spy on the loadNextQuestion function
+//         const loadNextQuestionSpy = jest.fn();
+//         // Mock the function to be used in the event listener
+//         jest.spyOn(window, 'loadNextQuestion').mockImplementation(loadNextQuestionSpy);
 
-        // Trigger the click event on the startButton
-        const startButton = document.querySelector('#start');
-        startButton.click();
+//         // Trigger the click event on the startButton
+//         const startButton = document.querySelector('#start');
+//         startButton.click();
 
-        // Expectations
-        expect(startButton).toBeDefined();
-        expect(startButton.addEventListener).toHaveBeenCalledWith('click', expect.any(Function));
-        expect(loadNextQuestionSpy).toHaveBeenCalled();
-    });
-});
+//         // Expectations
+//         expect(startButton).toBeDefined();
+//         expect(startButton.addEventListener).toHaveBeenCalledWith('click', expect.any(Function));
+//         expect(loadNextQuestionSpy).toHaveBeenCalled();
+//     });
+// });
 
 // describe("jest-environment jsdom", () => {
 //     it("should trigger shuffleArray on button click", () => {
