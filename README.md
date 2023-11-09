@@ -1,7 +1,7 @@
 # -hip-hip-array
 
 # Tudemon
-![Screenshot of the hub page for Tudemon.](/Screenshot%202023-11-09%20at%2010.35.34.png)
+![Screenshot of the hub page for Tudemon.](/Screenshot%202023-11-09%20at%2015.10.03.png)
 
 A GSCE history game to test Tudor era knowledge
 
