@@ -1,4 +1,4 @@
-#body{
+body{
     display: fixed;
     background-size: cover;
     justify-content: center;
@@ -8,7 +8,7 @@
     align-items: flex-end;
     text-align: justify;
     height: 100%;
-    background-color: rgb(224, 197, 163);
+    background-color: rgb(122, 94, 59);
     
 }
 p {
@@ -46,6 +46,9 @@ p {
     left: 15%;
     z-index: -1;
     visibility: hidden;
+}
+#studentAvatar img{
+    background: transparent
 }
 #tudor{
     position: absolute;
@@ -120,7 +123,10 @@ p {
     left: 25%;
     top: 30%;
     height: 40%;
-    background-color: rgb(210, 210, 210)
+    background-color: rgb(200, 200, 200)
+}
+#start:hover{
+    background-color: rgb(117, 117, 117);
 }
 
 #endBox{
@@ -138,6 +144,15 @@ p {
     height: 40%;
     visibility: hidden;
     background-color: rgb(210, 210, 210)
+}
+#endBox p{
+    border: none;
+}
+#returnButton{
+    border-radius: 15px;
+    padding: 20% 0;
+    height: 100%;
+    width: 100%
 }
 
 #boardBox{

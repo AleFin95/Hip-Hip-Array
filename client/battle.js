@@ -16,33 +16,34 @@ console.log(difficultyNewValue);
 
 let Hval = 0
 let Sval = 0
+let win 
 
 if (difficultyNewValue === "easy"){ //if easy
     Hval = 50 //sets damage multipliers
     Sval = 10
     character.textContent = "Edward"
-    win = "The prince"
+    win = "the prince"
     const tudorGif = document.getElementById("tudorImg")
-    tudorGif.src = "./assets/EdwardAnimation.gif"
+    tudorGif.src = "./assets/EdwardNoBackground.gif"
 } else if (difficultyNewValue === "medium"){
     Hval = 30
     Sval = 20
     character.textContent = "Elizabeth"
-    let win = "The princeess"
+    let win = "the princeess"
     const tudorGif = document.getElementById("tudorImg")
-    tudorGif.src = "./assets/elizabethAnimation.gif"
+    tudorGif.src = "./assets/elizabethNoBackground.gif"
 }else if (difficultyNewValue === "hard"){
     Hval = 20
     Sval = 30
     character.textContent = "Mary"
-    let win = "The princeess"
+    let win = "the Queen to be"
     const tudorGif = document.getElementById("tudorImg")
-    tudorGif.src = "./assets/MaryAnimation.gif"
+    tudorGif.src = "./assets/MaryAnimationNobackground.gif"
 }else{
     Hval = 10
     Sval = 35    
     character.textContent = "Henry VIII"
-    let win  = "The King"
+    let win  = "the King"
 }
 // // let currentHealthH = document.getElementById("henryHealth")
 // let currentHealthS = document.getElementById("studentHealth")
@@ -184,7 +185,7 @@ async function CheckAnswers(e) {
         let gifS = document.getElementById("studentAvatar")
         gifS.style.visibility = "hidden"
         gifT.style.visibility = "hidden"
-        endMessage.textContent = `Congratulations though hath slain The tudor`
+        endMessage.textContent = `Congratulations! though hath bested ${win}!`
         return
     } else if (currentHealthS.value < 1) {
         let element = document.getElementById("endBox");
