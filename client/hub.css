@@ -23,7 +23,7 @@ body{
 }
 
 #pannelBox:hover{
-    background-color: rgba(255, 0, 0, 0.9);
+    background-color: rgb(68, 125, 28);
 }
 
 #titleBoxBackground{
@@ -117,6 +117,7 @@ button:hover{
     width: 40%;
     margin: 0 auto;
     font-size: 18px;
+    padding: 0 0 1% 0;
 
 }
 

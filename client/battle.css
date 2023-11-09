@@ -9,10 +9,11 @@ body{
     text-align: justify;
     height: 100%;
     background-color: rgb(122, 94, 59);
+    background-image: url("./assets/ruins.jpg");
 
 }
 p {
-    border: 2px solid black ;
+    border: 2px solid #9A3B3B ;
     border-radius: 15px;
     text-align: center;
     align-content: center;
@@ -55,22 +56,22 @@ p {
     left: 18%;
     top: 5%;
     text-align: center;
-    border: 5px solid black;
+    border: 5px solid #9A3B3B;
     border-radius: 15px;
     width: 35%;
     height: 20%;
-    background-color: rgb(210, 210, 210);
+    background-color: #F2ECBE
 }
 #student{
     position: absolute;
     left: 55%;
     top: 73%;
     text-align: center;
-    border: 5px solid black;
+    border: 5px solid #9A3B3B;
     border-radius: 15px;
     width: 35%;
     height: 20%;
-    background-color: rgb(210, 210, 210)
+    background-color: #F2ECBE
 
 }
 #tudor p{
@@ -149,7 +150,7 @@ progress::-webkit-progress-value {
     font-size: 4em;
 }
 #start:hover{
-    background-color: rgb(117, 117, 117);
+    background-color:  #fffee150;
 }
 
 #endBox{
@@ -208,19 +209,22 @@ progress::-webkit-progress-value {
     align-items: normal;
     position: relative;
     justify-content: space-evenly;
-    border: 5px solid black;
+    border: 5px solid #9A3B3B;
     border-radius: 15px;
     padding: 5px;
     max-width: 50%;
     width: 47%;
-    background-color: rgb(210, 210, 210)
+    background-color: #F2ECBE;
 }
 
 #questionNum{
+    background-color: #E2C799;
     height: 30%;
     width: 95%
 }
 #question{
+    text-align: center;
+    background-color: #E2C799;
     height:70%;
     width: 95%
 }
@@ -231,19 +235,22 @@ progress::-webkit-progress-value {
     text-align: center;
     align-items: normal;
     justify-content: space-evenly;
-    border: 5px solid rgb(0, 0, 0);
+    border: 5px solid #9A3B3B;
     border-radius: 15px;
     padding: 5px;
     max-width: 50%;
     width: 100%;
     flex-direction: row;
-    background-color: rgb(210, 210, 210)
+    background-color: #F2ECBE
 
    }
+#answers p{
+    background-color: #E2C799;
+}
 
 
 #answers p:hover {
-    background-color: rgb(129, 129, 129);
+    background-color: #C08261;
 }
 
 #answers p{
