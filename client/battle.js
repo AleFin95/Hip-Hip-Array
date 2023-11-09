@@ -19,34 +19,38 @@ let Sval = 0
 if (difficultyNewValue === "easy"){ //if easy
     Hval = 50 //sets damage multipliers
     Sval = 10
-    console.log("Difficulty is easy")
+    character.textContent = "Edward"
+    win = "The prince"
 } else if (difficultyNewValue === "medium"){
     Hval = 30
     Sval = 20
-    console.log("Difficulty is medium")
+    character.textContent = "Elizabeth"
+    let win = "The princeess"
 }else if (difficultyNewValue === "hard"){
     Hval = 20
     Sval = 30
-    console.log("Difficulty is hard")
+    character.textContent = "Mary"
+    let win = "The princeess"
 }else{
     Hval = 10
-    Sval = 35
-    console.log("Difficulty is bosss")
+    Sval = 35    
+    character.textContent = "Henry VIII"
+    let win  = "The King"
 }
 // // let currentHealthH = document.getElementById("henryHealth")
 // let currentHealthS = document.getElementById("studentHealth")
 let currentHealthH = document.getElementById("henryHealth")
 let currentHealthS = document.getElementById("studentHealth")
-
+HealthH.textContent = `${currentHealthH.value}/100`
+HealthS.textContent = `${currentHealthS.value}/100`
 let visibilityCheck = 1
 // let currentHealthH.value = 100 //sets health for both student and henry as global variables
 // let currentHealthS.value = 100
 const setHenryHealth  = function(val){ //updates henry's health 
-     //gets value of henry health from html
+      //gets value of henry health from html
     currentHealthH.value = currentHealthH.value - val //updates health dependent on difficulty
 }
 const setStudentHealth  = function(val){ //same as above but for student
-    
     currentHealthS.value = currentHealthS.value - val
 }
 function reduceHealth(){ //temporary button for reducting health 
@@ -147,10 +151,15 @@ async function CheckAnswers(e) {
     if (chosenAnswer === selectedQuestion["correct"]) {
       console.log("Correct");
       setHenryHealth(Hval);
+      console.log(currentHealthH.value)
     } else {
       console.log("Incorrect");
       setStudentHealth(Sval);
     }
+    //updates health information on html
+    HealthH.textContent = `${currentHealthH.value}/100`
+    HealthS.textContent = `${currentHealthS.value}/100`
+    
 
     if (currentHealthH.value < 1) {
         let element = document.getElementById("endBox");
@@ -159,7 +168,7 @@ async function CheckAnswers(e) {
         Qbox.style.visibility = "hidden";
         let healthBars = document.getElementById("Bars")
         healthBars.style.visibility = "hidden"
-        endMessage.textContent = "Congratulations though hath slain the king"
+        endMessage.textContent = `Congratulations though hath slain The tudor`
         return
     } else if (currentHealthS.value < 1) {
         let element = document.getElementById("endBox");

@@ -26,10 +26,11 @@ p {
     width: 90%;
     height: 70%;
     visibility:hidden;
+    
 
 }
 #avatar1{
-    position: absoulte;
+    position: absolute;
     top: 10%;
     right: 60%;
 }
@@ -42,7 +43,7 @@ p {
     border-radius: 15px;
     width: 35%;
     height: 20%;
-    background-color: rgb(210, 210, 210)
+    background-color: rgb(210, 210, 210);
 }
 #student{
     position: absolute;
@@ -57,18 +58,33 @@ p {
 
 }
 #tudor p{
+    display: inline;
+    box-sizing: border-box;
     border: none;
-    padding: 2px 0;
+    text-decoration: underline; 
     margin: 0;
     font-size: 1.5em;
 
 }
 #student p{
+    display: inline;
+    box-sizing: border-box;
     border: none;
-    padding: 2px 0;
+    text-decoration: underline; 
     margin: 0;
     font-size: 1.5em;
-
+}
+#character {
+    padding: 0 40% 0 3%;
+}
+#HealthH{
+    padding: 0 3% 0 10%;
+}
+#Player {
+    padding: 0 50% 0 3%;
+}
+#HealthS {
+    padding: 0 3% 0 50%;
 }
 #tudor progress{
     height: 70%;
