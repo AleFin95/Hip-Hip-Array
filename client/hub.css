@@ -88,14 +88,19 @@ button{
     border-radius: 40px;
     padding: 10px 20px;
     margin-bottom: 1%;
-    border: 0;
-    color: #fff;
-    background: #03c142b0;
-    border: 2px solid rgb(26, 81, 32);
-    font-size: 18px;
+    width: 30%;
+    height: 50px; 
+    font-size: 20px;
+    border-radius: 20px;
+    font-family: "MedievalSharp";
+    margin-top: 20px;
+    margin-bottom: 0;
+    background-color: rgb(239, 227, 66);
+    border: 3px solid rgba(123, 23, 23, 0.682);
     :hover {
     transition: all .1s ease;
-    }
+    };
+
 }
 
 #postBox{
