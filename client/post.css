@@ -108,13 +108,12 @@ label {
 }
 
 
-/*input[type="text"] {
-    height: 100px; 
+
+#tudorAvatar{
+    
+    background-color: rgb(210, 210, 210)
+
 }
-*/
-
-
-
 
 
 /* Media query for smaller screens */
