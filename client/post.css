@@ -107,13 +107,12 @@ label {
     margin-left: 10px;
 }
 
-
-
-#tudorAvatar{
-    
-    background-color: rgb(210, 210, 210)
-
-}
+/*tudorAvatar{
+    position: absolute; 
+    bottom: 50px; /* Adjust the top position in pixels or another unit */
+   /* right: 160px; /* Adjust the left position in pixels or another unit */
+    /*height: auto; /* Maintain the aspect ratio */
+   /* z-index: 4;
 
 
 /* Media query for smaller screens */
