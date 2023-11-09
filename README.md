@@ -1,2 +1,11 @@
 # -hip-hip-
-Group Project 
+
+# Tudemon
+
+A middle school game to test Tudor era knowledge
+
+# Installation & Usage
+
+Installation: 
+
+
