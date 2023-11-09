@@ -10,18 +10,29 @@
 </head>
 
 <body>
-    <progress class= "healthBar" value="100" max="100" id="henryHealth"></progress>
-    <br>
-    <progress class= "healthBar" value="100" max="100" id="studentHealth"></progress>
-    <div class="avatar1"></div>
-    <div class="avatar2"></div>
+    <section id="Bars">
+        <div id="tudor">
+            <p id="character">Tudors</p>
+            <progress class= "healthBar" value="100" max="100" id="henryHealth"></progress>
+        </div>
+        <div id="student">
+            <p>Player</p>
+            <progress class= "healthBar" value="100" max="100" id="studentHealth"></progress>
+        </div>
+    </section>  
+    <div id="tudorAvatar">
+        <img src="./assets/HenryAnimation.gif" alt="alt">
+    </div>
+    <div id="studentAvatar">
+        <img src="" alt="alt">
+    </div>
     <div id="endBox">
         <p id="endMessage">Game over!</p>
         <a href ="hub.html">
             <button id="returnButton">Return to hub</button>
         </a>
     </div>
-    <p id="start" >Start</p>
+    <p id="start" >Begineth Battle!</p>
     <section id="boardBox">
         <div id ="questionBox">
             <p id="questionNum"></p>

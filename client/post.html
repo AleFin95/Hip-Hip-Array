@@ -6,11 +6,13 @@
     <title>Create your own question!</title>
     <script defer src="post.js"></script>
     <link rel="stylesheet" href="post.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=MedievalSharp&display=swap" rel="stylesheet">
 </head>
 <body>
+<div class="main">
     <div class="container">
      <div class="contentBox">
-        <h1>Create your own question!</h1>
+        <h1>Create Your Own Question</h1>
         <form id="createQuestion">
         <label for="question">Question:</label><br>
         <input type="text" class="field" id="question" name="question" required><br>
@@ -24,13 +26,14 @@
         <input type="text" class="field" id="incorrect3" name="incorrect3" required><br>
         <input id="questionSubmit" type=submit value="submit"/>
       </form>
-      <a href="hub.html">
+      <a href="hub.html" class="icon-button">
         <button>
-     <p id="returnButton">Return to homepage</p>
+     <p id="returnButton"></p>
         </button>
      </a>
      </div>  
     </div>
+</div>
 </body>
 </html>
 
