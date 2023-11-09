@@ -28,7 +28,11 @@ p {
     visibility:hidden;
 
 }
-
+#avatar1{
+    position: absoulte;
+    top: 10%;
+    right: 60%;
+}
 #tudor{
     position: absolute;
     left: 10%;
@@ -37,7 +41,8 @@ p {
     border: 2px solid black;
     border-radius: 15px;
     width: 35%;
-    height: 20%
+    height: 20%;
+    background-color: rgb(210, 210, 210)
 }
 #student{
     position: absolute;
@@ -47,7 +52,8 @@ p {
     border: 2px solid black;
     border-radius: 15px;
     width: 35%;
-    height: 20%
+    height: 20%;
+    background-color: rgb(210, 210, 210)
 
 }
 #tudor p{
@@ -85,6 +91,7 @@ p {
     left: 25%;
     top: 30%;
     height: 40%;
+    background-color: rgb(210, 210, 210)
 }
 
 #endBox{
@@ -100,7 +107,8 @@ p {
     padding: 10px 0;
     width:50%;
     height: 40%;
-    visibility: hidden
+    visibility: hidden;
+    background-color: rgb(210, 210, 210)
 }
 
 #boardBox{
@@ -131,6 +139,7 @@ p {
     padding: 5px;
     max-width: 50%;
     width: 47%;
+    background-color: rgb(210, 210, 210)
 }
 
 #questionNum{
@@ -154,6 +163,7 @@ p {
     max-width: 50%;
     width: 100%;
     flex-direction: row;
+    background-color: rgb(210, 210, 210)
       
    }
 
