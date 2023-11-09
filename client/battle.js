@@ -29,7 +29,7 @@ if (difficultyNewValue === "easy"){ //if easy
     Hval = 30
     Sval = 20
     character.textContent = "Elizabeth"
-    win = "the princeess"
+    win = "the princess"
     const tudorGif = document.getElementById("tudorImg")
     tudorGif.src = "./assets/elizabethNoBackground.gif"
 }else if (difficultyNewValue === "hard"){
