@@ -7,11 +7,11 @@ A middle school game to test Tudor era knowledge
 
 ## Installation & Usage
 
-# Installation: 
+### Installation: 
 
 * Clone or download the repo
 
-# Usage:
+### Usage:
 
 * Open the terminal 
 * Enter ```npm run dev```
