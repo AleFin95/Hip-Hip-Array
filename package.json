@@ -17,6 +17,7 @@
   "devDependencies": {
     "jest": "^29.7.0",
     "jest-each": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "nodemon": "^3.0.1"
   },
   "dependencies": {
