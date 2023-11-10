@@ -80,7 +80,7 @@ const questions = [];
 
 async function loadQuestions() {
     try {
-      const questionData = await fetch("http://localhost:3000/questions");
+      const questionData = await fetch("https://hip-hip.onrender.com/questions");
       if (!questionData.ok) {
         throw new Error("Failed to fetch questions");
       }

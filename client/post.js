@@ -20,7 +20,7 @@ async function createQuestion(e){
     body: JSON.stringify(data)
 }
 
-const response = await fetch ("http://localhost:3000/questions/create", options)
+const response = await fetch ("https://hip-hip.onrender.com/questions/create", options)
 
   if(response.ok){
     e.target.question.value=""
