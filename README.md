@@ -14,7 +14,6 @@ A GSCE history game to test Tudor era knowledge
 ### Usage:
 
 * Open the terminal 
-* Enter ```npm run dev```
 * Open the hub.html file with live server
 * **Need to change this when deployment is successful**
 
